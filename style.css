@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.border {
+  border: 2px solid black;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(130, 130, 130);
+  max-width: 400px; /* Maximum width for the calculator */
+  width: 100%;
+}
+
+.numbers input {
+  font-size: 2rem;
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.button {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+  flex: 1; /* Allows buttons to expand and fill available space */
+  margin: 2px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.ritesh {
+  color: white;
+  text-align: center;
+  background-color: rgb(54, 54, 54);
+  border: 2px solid black;
+  border-top: 0;
+  padding: 10px;
+  font-size: 1.6rem;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 500px;
+    margin-left: -250px;
+    
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .numbers input {
+    font-size: 1.5rem;
+  }
+
+  .ritesh {
+    font-size: 1.4rem;
+  }
+}
